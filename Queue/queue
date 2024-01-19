@@ -1,1 +1,17 @@
 always use linkedlist to implement queue in java 
+
+ Queue<Integer>queue=new LinkedList<>();
+
+        // to insert element in queue - just life queue.insert() in c++
+        queue.offer(1);
+        queue.offer(2);
+        queue.offer(3);
+        queue.offer(4);
+
+        // to get first element from the queue just like queue.front() in C++
+        queue.peek();
+
+        // to remove first element from the queue queue.pop() in c++ ,
+        // but it also return the no
+        System.out.println(queue.poll());
+
