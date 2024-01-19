@@ -15,3 +15,6 @@ always use linkedlist to implement queue in java
         // but it also return the no
         System.out.println(queue.poll());
 
+  // to check if queue is empty  
+        queue.isEmpty();
+
