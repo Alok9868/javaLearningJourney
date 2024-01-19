@@ -1,0 +1,19 @@
+  PriorityQueue<Integer>priorityQueue=new PriorityQueue<>();
+        // adding element to priority queue
+        priorityQueue.add(4);
+        priorityQueue.add(10);
+        priorityQueue.add(6);
+
+
+        // to see the top element in pq - just like pq.top() in c++
+        System.out.println(priorityQueue.peek());
+
+
+        // to delete the top element from pq - just like pq.pop() in c++
+        priorityQueue.poll();
+
+//        offer(E e): This method attempts to add the specified element to the queue.
+//        If the queue is at its capacity and cannot accept more elements, offer returns false.
+//        add(E e): This method also attempts to add the specified element to the queue. 
+//        If the queue is at its capacity and cannot accept more elements, add throws an IllegalStateException.
+
