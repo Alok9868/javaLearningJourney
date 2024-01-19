@@ -17,3 +17,15 @@
 //        add(E e): This method also attempts to add the specified element to the queue. 
 //        If the queue is at its capacity and cannot accept more elements, add throws an IllegalStateException.
 
+// custom comparator functions
+ PriorityQueue<Long>priorityQueue1=new PriorityQueue<>((a,b)-> Math.toIntExact(b - a));
+        priorityQueue1.add(100L);
+        priorityQueue1.add(198L);
+        priorityQueue1.add(1223L);
+
+
+        while (!priorityQueue1.isEmpty())
+        {
+            System.out.println(priorityQueue1.poll());
+        }
+
