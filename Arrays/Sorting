@@ -1,0 +1,16 @@
+How to create custom comparator function
+
+List<Integer>arraylist= new ArrayList<>();
+        arraylist.add(12);
+        arraylist.add(23);
+        
+        Collections.sort(arraylist, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return Integer.compare(o1,o2);
+            }
+        });
+        for (Integer a:arraylist)
+        {
+            System.out.println(a);
+        }
