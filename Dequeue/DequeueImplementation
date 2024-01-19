@@ -1,0 +1,24 @@
+// Creating a Deque using ArrayDeque
+        Deque<String> deque = new ArrayDeque<>();
+
+        // Adding elements to the front (head) of the deque
+        deque.addFirst("Element 1");
+        deque.addFirst("Element 2");
+
+        // Adding elements to the end (tail) of the deque
+        deque.addLast("Element 3");
+        deque.addLast("Element 4");
+
+        // Displaying the elements in the deque
+        System.out.println("Deque elements: " + deque);
+
+        // Removing elements from the front and end of the deque
+        String removedFromFront = deque.removeFirst();
+        String removedFromEnd = deque.removeLast();
+
+        // Displaying the removed elements
+        System.out.println("Removed from front: " + removedFromFront);
+        System.out.println("Removed from end: " + removedFromEnd);
+
+        // Displaying the updated deque
+        System.out.println("Updated deque: " + deque);
