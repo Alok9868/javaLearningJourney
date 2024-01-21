@@ -1,0 +1,27 @@
+Set<Integer>set=new HashSet<>();
+        set.add(1);
+        set.add(199);
+        set.add(13);
+        set.add(132);
+
+        set.remove(132);
+        if (set.contains(100))
+        {
+            System.out.println("asdf");
+        }
+        Set<Integer>set2=new HashSet<>();
+        set2.add(1);
+        // it will retain all ele which are there in set and set2
+        set2.retainAll(set);
+        //it will remove all ele which are there in set
+        set2.removeAll(set);
+
+        //it will add ele from set to ser2
+        set2.addAll(set);
+        System.out.println(set2);
+//        System.out.println(set);
+        // to store the elements and also maintain the ordering in which ele are stored
+        Set<Integer>set3=new LinkedHashSet<>();
+        set3.add(1);
+        set3.add(2);
+        set3.add(12);
